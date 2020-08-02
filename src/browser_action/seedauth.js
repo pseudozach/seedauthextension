@@ -20,7 +20,7 @@ $(function(){
 		$("#loggedinsites").css("border","");
 		console.log("loggedinsites: ", loggedinsites);
 		for (var i = loggedinsites.length - 1; i >= 0; i--) {
-			var el = '<a href="' + loggedinsites[i] + '">' + loggedinsites[i] +' </a>';
+			var el = '<div style="margin: 5px;"><a href="' + loggedinsites[i] + '">' + loggedinsites[i] +' </a></div>';
 			$("#loggedinsites").append(el);
 		}
 	}
