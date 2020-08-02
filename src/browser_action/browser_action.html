@@ -1,0 +1,73 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 300px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	div {text-align: center;}
+</style>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="qrcode.js"></script> -->
+<!-- <script src="pushln.js"></script> -->
+<link rel="stylesheet" type="text/css" href="../../css/pure-min.css">
+
+<div id="mainPopup">
+	<h1 style="text-align: center;">Seed Auth</h1>
+	<div id="loginholder" style="width: fit-content;margin: auto;">
+		<form class="pure-form pure-form-aligned">
+		    <fieldset>
+		        <div class="pure-control-group">
+		            <label for="username">Username</label>
+		            <input type="text" id="username" placeholder="Username" />
+		            <!-- <span class="pure-form-message-inline">This is a required field.</span> -->
+		        </div>
+		        <div class="pure-control-group">
+		            <label for="password">Password</label>
+		            <input type="password" id="password" placeholder="Password" />
+		        </div>
+		        <div class="pure-controls">
+		            <button type="button" class="pure-button pure-button-primary" id="login">Save Identity</button>
+		        </div>
+		    </fieldset>
+		</form>
+	</div>
+
+	<div id="logoutholder" style="display: none;">
+		<img src="../../icons/icon48.png">
+		<p id="loggedinusername"></p>
+		<div id="loggedinsites" style="border: 1px grey dashed;">
+			<p>Sites that you login with LNURL AUTH will show up here...</p>
+		</div>
+		<form class="pure-form pure-form-aligned">
+		    <fieldset>
+		        <div class="pure-controls">
+		            <button type="button" class="pure-button" id="logout">Logout</button>
+		        </div>
+		    </fieldset>
+		</form>
+	</div>	
+	
+<!-- 	<p style="margin:0.5rem;">Scan this QR Code with <a href="https://play.google.com/store/apps/details?id=com.pseudozach.pushln" target="_blank"> Push LN Android App</a> to receive Lightning payment prompts on your phone.</p>
+	<div id="qrcodeholder" style="pointer-events: none;width: fit-content;margin: auto;display: block;padding: 1rem;"></div>
+	<h2 id="paired" style="text-align: center;margin:0.5rem;">No Paired Mobile App</h2>
+	<p style="margin:0.5rem;" id="browseruserid"></p>
+	<a href="https://kriptode.com" target="_blank" style="margin:0.5rem;">https://kriptode.com</a> -->
+</div>
+
+<!-- <script type="text/javascript" src="bech32-buffer.min.js"></script> -->
+<!-- <script type="text/javascript" src="bech32browser.js"></script> -->
+<!-- <script type="text/javascript" src="bech32bundle.js"></script>
+<script type="text/javascript" src="sha.js"></script>
+<script type="text/javascript" src="elliptic.min.js"></script>
+<script type="text/javascript" src="buffer.js"></script> -->
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="seedauth.js"></script>
