@@ -28,7 +28,8 @@ $(function(){
 	// populate identities - todo
 });
 
-$("#login").click(function(){
+$("form").submit(function(event){
+	event.preventDefault();
 	if($("#username").val() == "" || $("#password").val() == ""){
 		alert("enter both username and password to generate an identity");
 		return;
