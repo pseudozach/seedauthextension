@@ -1,6 +1,6 @@
 {
   "name": "Seed Auth - LNURL Auth",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "This extension lets you login to websites supporting lnurl-auth with 1 click",
   "homepage_url": "https://seed-auth.etleneum.com/",
@@ -22,7 +22,6 @@
   "permissions": [
     "https://*/*"
   ],
-  // "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

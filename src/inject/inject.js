@@ -26,10 +26,19 @@ document.addEventListener('click', function(event) {
         	var lnurl = clicked.split("lightning:")[1];
         	//send it over!
         	console.log("pushing this link to bg.js: ", lnurl);
-        	chrome.extension.sendMessage({greeting: "hello", lnurl: lnurl}, function(response) {
-			  // console.log(response.status);
-			  console.log("whatevs");
-			});
+            if(chrome && chrome != null){
+                //chrome extension
+                chrome.extension.sendMessage({greeting: "hello", lnurl: lnurl}, function(response) {
+                  // console.log(response.status);
+                  console.log("whatevs");
+                });
+            } else {
+                //firefox extension
+                 var sending = browser.runtime.sendMessage({
+                    greeting: "Greeting from the content script",
+                    lnurl: lnurl
+                 });                
+            }
         }
         break;
       }
