@@ -22,7 +22,8 @@ document.addEventListener('click', function(event) {
       if (target instanceof HTMLAnchorElement) {
         console.log(target.getAttribute('href'));
         var clicked = target.getAttribute('href');
-        if(clicked && clicked != null && clicked.toLowerCase().includes("lightning:")){
+        if(clicked && clicked != null && clicked.toLowerCase().includes("lightning:lnurl1")){
+		event.preventDefault();
         	var lnurl = clicked.split("lightning:")[1];
         	//send it over!
         	console.log("pushing this link to bg.js: ", lnurl);
